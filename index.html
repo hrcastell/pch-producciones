@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>PCH-MotoService</title>
+
+  <!-- CSS  -->
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link rel="preconnect" href="https://fonts.gstatic.com">
+  	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  	<link rel="icon" href="favicon.ico">
+
+</head>
+<body>
+  <nav class="grey darken-4" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo teal-text fonts">
+        PCH - Moto Service
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="white-text" href="#">Menú</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Menú</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <div class="row center">
+        	<img src="logo.ico">
+          <h5 class="header col s12 white-text ">Conoce nuestro taller y disfruta de nuestros servicios</h5>
+        </div>
+        <div class="row center">
+          <a href="https://api.whatsapp.com/send?phone=+56974084230" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Pide tu hora</a>
+        </div>
+        <br><br>s
+
+      </div>
+    </div>
+    <div class="parallax"><img src="background.png" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center teal-text"><i class="fas fa-tools"></i></h2>
+            <h5 class="center teal-text fonts">Mantenciones</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center teal-text"><i class="fas fa-toolbox"></i></h2>
+            <h5 class="center teal-text fonts">Armado de motos</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center teal-text"><i class="fas fa-wrench"></i></h2>
+            <h5 class="center teal-text fonts">Preparacion de carrera</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h3 class="header col s12 teal-text fonts">Somos taller multimarca</h3>
+          <h5 class="header col s12 white-text fonts">Recibimos todo tipo de motos, de alta y bajas cilindradas</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images (2).jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="teal-text fonts">Agenda tu hora</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu,</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <form action="enviar.php" method="post" class="col s12 form_contact">
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input placeholder="Hernán Castellanos" id="names" type="text" name="nombre" class="validate white-text" required="">
+              <label for="names">Nombres y Apellidos *</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="1234567890" type="text" id="phone" name="telefono" class="validate white-text" required="">
+              <label for="phone">Telefono</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input placeholder="contacto@correo.com" id="email" type="email" name="correo" class="validate white-text" required="">
+              <label for="email">Correo electronico</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+            	<select>
+      				<option value="" disabled selected id="brand" name="marca" class="validate white-text" required="">Choose your option</option>
+      				<option value="1">Kawasaki</option>
+      				<option value="2">Honda</option>
+      				<option value="3">Yamaha</option>
+      				<option value="3">Suzuki</option>
+      				<option value="3">KTM</option>
+      				<option value="3">BMW</option>
+      				<option value="3">Aprilia</option>
+    			</select>
+              <label for="brand">Marca del Vehiculo</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input placeholder="kx-450" id="model" type="text" name="modelo" class="validate white-text" required="">
+              <label for="model">Modelo del Vehiculo</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input placeholder="solicito hora para el miercoles a las 9:00am." id="mensaje" name="mensaje" type="text" class="validate white-text" required="">
+              <label for="mensaje">Indique dia y hora.</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field inline">
+                <button class="btn waves-effect waves-light" type="submit" name="action" id="btnSend">Enviar solicitud
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <hr class="teal">
+      <div class="row">
+        <h4 class="center fonts">Tambien puedes contactarnos por:</h4>
+        <br>
+        <div class="col s6 center">
+          <button class="btn waves-effect waves-light href=https://api.whatsapp.com/send?phone=+56974084230">
+            <i class="fab fa-whatsapp"></i> Whatsapp
+          </button>
+        </div>
+        <div class="col s6 center">
+          <button class="btn waves-effect waves-light href=tel:+56974084230">
+            <i class="fas fa-phone-alt"></i> Llamar
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h3 class="header col s12 teal-text fonts">Digno de un Rey</h3>
+          <h5 class="header col s12 white-text fonts">Atendemos tu moto con exclusividad y privacidad.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background4.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="teal-text fonts">PCH-MotoService</h5>
+          <p class="white-text text-lighten-3">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="teal-text fonts">Encuentrasnos en:</h5>
+          <ul>
+            <li><i class="fas fa-map-marked-alt white-text"></i> San Pablo 4423 y 4419</li>
+            <li><a class="white-text"> Quinta Normal</a></li>
+            <li><a class="white-text"> Region Metropolitana</a></li>
+            <li><br></li>
+            <li><h5 class="teal-text fonts">Siguenos en:</h5></li>
+            <li><h6><i class="fab fa-instagram teal-text"><a class="white-text fonts" href="https://www.instagram.com/pchmotoservice"> Instagram</a></i></h6></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d832.352713074465!2d-70.69569237078211!3d-33.43860099879857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c469bb7ac8b5%3A0x951c34995b6e7912!2sSan%20Pablo%204419%2C%20Quinta%20Normal%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1615425094631!5m2!1ses-419!2scl" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2018 – 
+            <script type="text/javascript">
+              document.write(new Date().getFullYear());
+            </script>
+            <noscript>
+              2021
+            </noscript>Todo los derechos reservados  |  Made by <a class="orange-text text-lighten-4" href="https://hrcastell.com">Hr-Castell</a> on Materialize
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
