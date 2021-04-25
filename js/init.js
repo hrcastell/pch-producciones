@@ -4,6 +4,7 @@
     $('.sidenav').sidenav();
     $('.parallax').parallax();
     $('select').formSelect();
+    $('.modal').modal();
     M.updateTextFields();
 
   }); // end of document ready
